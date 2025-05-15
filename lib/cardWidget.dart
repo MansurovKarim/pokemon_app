@@ -23,6 +23,7 @@ class cardWidget extends StatelessWidget {
         height: 122,
         width: 104,
 
+
         decoration: BoxDecoration(
           border: Border.all(color: color, width: 3),
           borderRadius: BorderRadius.circular(12),
@@ -34,7 +35,7 @@ class cardWidget extends StatelessWidget {
               padding: const EdgeInsets.symmetric(vertical: 2, horizontal: 3),
               child: Text(
                 id,
-                style: TextStyle(color: color, fontSize: 8, fontWeight: FontWeight.bold),
+                style: TextStyle(color: color, fontSize: 10, fontWeight: FontWeight.bold),
               ),
             ),
             Padding(
@@ -42,7 +43,7 @@ class cardWidget extends StatelessWidget {
               child: Image.network
                 (
                 imageUrl,
-                width: 85, height: 85,
+                width: 100, height: 100,
               ),
             ),
             Container(
@@ -57,7 +58,7 @@ class cardWidget extends StatelessWidget {
               ),
             )
           ],
-        )
+        ),
     );
 
   }
